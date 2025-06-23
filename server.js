@@ -13,7 +13,7 @@ import cartRouter from './routes/cartRoute.js'
 // app config
 
 const app  = express()
-const port =process.env.PORT || 4000
+const port = 44444;
 
 // middleware
 app.use(express.json()) // it use when ..we want request from frontend to backend
