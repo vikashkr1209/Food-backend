@@ -23,7 +23,7 @@ app.use(cors({
   credentials: true
 })); // bcz of this we can access backend from frontend
 //  db connection
-connectDB();
+connectDB(mongodb+srv://vikash:vikash912@cluster0.azvfj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0);
 
 // api endpoints
 app.use("/api/food",foodRouter)
