@@ -17,7 +17,11 @@ const port = 44444;
 
 // middleware
 app.use(express.json()) // it use when ..we want request from frontend to backend
-app.use(cors()) // bcz of this we can access backend from frontend
+app.use(cors({
+  origin: "https://deploy-mern-1whq.vercel.app", // Your frontend
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+})); // bcz of this we can access backend from frontend
 //  db connection
 connectDB();
 
